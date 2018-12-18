@@ -155,5 +155,8 @@ int main()
         cin >> workList[index].startTime >> workList[index].runningTime;
         workList[index].workId = index;
         bool gs = getSpace(index);
+        if (!gs)
+            cout << "分配空间失败！" << endl;
     }
+    return 0;
 }
